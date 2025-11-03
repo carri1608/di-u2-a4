@@ -5,16 +5,21 @@ const poem = {
       'Florece una amapola.'
     ]
   };
+
+
+
   
   export default function Poem() {
+
+    let salida = []
+    poem.lines.forEach((line,i) => {
+      salida.push(<hr/>)
+      salida.push(<p key={i}>{line}</p>)
+    });
+    salida.shift();
     return (
       <article>
-        {poem.lines.map((line, index) =>
-          <p key={index}>
-            {line}
-            
-          </p>
-        )}
+        {salida}
       </article>
     );
   }

@@ -32,8 +32,9 @@ export default function List() {
 
   return (
     <article>
-      <h1>Científicos</h1>
+      <h1>Científicos Químicos</h1>
       <ul>{listCientificos}</ul>
+      <h1>Científicos No Químicos</h1>
       <ul>{listNoCientificos}</ul>
     </article>
   );
